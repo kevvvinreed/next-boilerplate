@@ -1,7 +1,7 @@
 {
-  "name": "@algocide/create-next-ts",
-  "version": "1.0.0",
-  "bin": "./bin/cli/js",
+  "name": "create-next-ts",
+  "version": "1.0.1",
+  "bin": "./bin/cli.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

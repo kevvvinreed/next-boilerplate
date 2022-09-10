@@ -12,7 +12,7 @@ const run = cmd => {
   return true;
 };
 
-const repo_name = process.argv[2];
+const repo_name = process.argv[2] ? process.argv[2] : '.';
 const git_checkout_command = `git clone --depth 1 https://github.com/kevvvinreed/next-boilerplate ${repo_name}`;
 const install_dependencies_command = `cd ${repo_name} && yarn`;
 
