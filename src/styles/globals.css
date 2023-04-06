@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&display=swap');
 
 [data-theme='light'] {
-  --primary: #e5e5e5;
-  --secondary: #ffffff;
-  --text: #000000;
-  --secondary-text: #121212;
-  --accent: rgb(255, 107, 74);
+  --primary: #f4fffd;
+  --secondary: #ed254e;
+  --tertiary: #f9dc5c;
+  --primary-text: #000;
+  --secondary-text: #000;
+  --secondary-text: #000; 
 }
 
 [data-theme='dark'] {
-  --primary: #1f1a24;
-  --secondary: #121212;
-  --primary-text: #ffffff;
-  --secondary-text: #aeaeae;
-  --accent: rgb(255, 107, 74);
+  --primary: #0b0002;
+  --secondary: #12dab1;
+  --tertiary: #0623a3;
+  --primary-text: #fff;
+  --secondary-text: #000;
+  --secondary-text: #fff; 
 }
 
 * {
