@@ -2,8 +2,6 @@ import { NextPage } from 'next';
 import { AppProps } from 'next/app';
 import Script from 'next/script';
 import React, { useEffect, useState } from 'react';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import '../src/styles/globals.css';
 
 export interface IPageProps {
@@ -48,11 +46,6 @@ export default function App(props: IRootProps) {
 
   return (
     <>
-      <ToastContainer toastClassName="custom-notify" position="top-center" />
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TAG}`}
-      />
       <Script
         strategy="lazyOnload"
         id="gtag"
