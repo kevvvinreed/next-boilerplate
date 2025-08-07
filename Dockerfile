@@ -10,7 +10,7 @@ RUN apk add --no-cache git
 
 RUN corepack enable && corepack prepare yarn@4.6.0 --activate
 
-RUN if [ -f yarn.lock ]; then yarn install --immutable; else yarn install; fi
+RUN yarn install --immutable
 
 COPY . .
 
