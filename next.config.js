@@ -7,7 +7,6 @@ const isDev = false;
 
 const env = {
   IS_DEV: isDev ? 'true' : 'false',
-  GA_TAG: '',
 };
 
 module.exports = {
