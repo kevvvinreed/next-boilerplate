@@ -10,7 +10,7 @@ RUN apk add --no-cache git
 
 RUN corepack enable && corepack prepare yarn@4.6.0 --activate
 
-RUN yarn install --frozen-lockfile
+RUN yarn install --immutable
 
 RUN yarn add --dev @types/node @types/react@18.0.0
 
