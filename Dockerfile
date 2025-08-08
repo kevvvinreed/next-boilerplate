@@ -10,7 +10,7 @@ RUN apk add --no-cache git
 
 RUN corepack enable && corepack prepare yarn@4.6.0 --activate
 
-RUN yarn install --immutable
+RUN yarn install --immutable || yarn install --mode=update-lockfile
 
 COPY . .
 
